@@ -1,38 +1,34 @@
 //Continuation from "classObjectsPractice"
 
-class Persons {
-    int age;
-    String name;
+class Robot {
+    void speak(String text) {
+        System.out.println(text);
+    }
 
-    void sayHello() {
-        System.out.println("Hello, my name is " +name+ " and I'm " +age+ " years old.");
+    public void jump(int height) {
+        System.out.println("Jumping: " +height);
+    }
+
+    public void move(String direction, double distance){
+        System.out.print("Moving: " +distance + " meters");
+        System.out.println(" In direction: " +direction);
     }
 }
 
 public class MethodsPracticeMain {
     public static void main(String[] args) {
 //        System.out.println("Hello World!");
-        Persons personsOne = new Persons();
-        personsOne.name = "Link";
-        personsOne.age = 27;
-        personsOne.sayHello();
-        System.out.print(personsOne.name + " ");
-        System.out.println(personsOne.age);
 
+        Robot android = new Robot();
 
+        android.speak("Hello, there");  /*ihave passed 'text' when declaring the method. this is that example*/
+        android.jump(2);
+        android.move("west", 12.2);
 
-        Persons personsTwo = new Persons();
-        personsTwo.name = "Zelda";
-        personsTwo.age = 27;
-        personsTwo.sayHello();
-        System.out.print(personsTwo.name + " ");
-        System.out.println(personsTwo.age);
+        String greeting = "Hi, there.";  /*creating a placeholder for an expected String when calling "android.speak()"*/
+        android.speak(greeting);    /*now using 'greeting' as a new String placeholder instead of what idid on line '24'*/
+
+        int value = 14;
+        android.jump(value);    /*same example as above but for integers*/
     }
 }
-
-//TODO:
-// > make a method tited "Pearsons"
-//  >> pass it an age and name
-// > within "Pearsons" make a "speak" class
-//  >> ouput persons name and age to console
-// > in 'main' call the "Pearsons" method

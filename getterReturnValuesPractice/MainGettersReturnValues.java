@@ -1,5 +1,3 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 class Personss {
     int age;
     String name;
@@ -8,7 +6,7 @@ class Personss {
         System.out.println("Hello my name is " +name);
     }
 
-//  Created a 'return' method
+    //  Created a 'return' method
     int yearsLeftTilRetirement() {
         int yearsLeft = 65 - age;
 //        System.out.println(yearsLeft);
@@ -29,8 +27,17 @@ public class MainGettersReturnValues {
     }
 }
 
+
 //TODO:
 // > create a "person" class
-//   >> set age and name then call from 'manin'
+//   >> set age and name then call from 'main'
 // > create within "person" an int return method of calculated years until retirement == 65years
 //   >> call it from 'main'
+//BONUS:
+// > create a 'get' method for both age and name  (completed)
+// > call the get method in main  (completed)
+//>get user input for 'name' and 'age'
+
+//OUTPUT:
+//        Hello my name is Link
+//        Years left until retire: 38
