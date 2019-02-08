@@ -23,7 +23,7 @@ public class StaticFinalMain {
         Thing thing1 = new Thing();
         Thing.description = "I'am a Robot";
         System.out.println(Thing.description);
-//      System.out.println("Created @ count: "+Thing.count);
+      System.out.println("Created @ count: "+Thing.count);
 
         thing.setName("Arlo");
         thing1.setName("Bixby");
