@@ -1,3 +1,4 @@
+
 class Thing {
     public static final int LUCKY_NUMBER = 7;
     private String name;
@@ -48,3 +49,4 @@ public class StaticFinalMain {
 //    >> description
 //    >> retrieve the lucky number
 //    >> retrieve the count
+
