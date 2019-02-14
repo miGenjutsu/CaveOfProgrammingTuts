@@ -1,3 +1,5 @@
+package com.caveofprogramming.tutorials.setters_and_this_practice;
+
 class Frog {
     String name;
     int age;

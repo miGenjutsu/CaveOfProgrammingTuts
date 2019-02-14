@@ -1,4 +1,4 @@
-//Continuation from "classObjectsPractice"
+package com.caveofprogramming.tutorials.method_practice;//Continuation from "classObjectsPractice"
 
 class Robot {
     void speak(String text) {

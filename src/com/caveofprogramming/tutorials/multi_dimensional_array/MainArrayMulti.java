@@ -1,3 +1,5 @@
+package com.caveofprogramming.tutorials.multi_dimensional_array;
+
 public class MainArrayMulti {
     public static void main(String[] args) {
         int[][] grid = {
