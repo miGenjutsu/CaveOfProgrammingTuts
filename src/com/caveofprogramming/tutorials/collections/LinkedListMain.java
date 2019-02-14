@@ -23,6 +23,7 @@ public class LinkedListMain {
          *     <-     <-
          *
          */
+        List<Integer> arrayList = new ArrayList<Integer>();
         List<Integer> linkedList = new LinkedList<Integer>();   /*--> used: add/remove @ beginning or middle*/
 
         doTiminigs("ArrayList", arrayList);
