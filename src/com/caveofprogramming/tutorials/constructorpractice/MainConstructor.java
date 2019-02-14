@@ -1,3 +1,5 @@
+package com.caveofprogramming.tutorials.constructorpractice;
+
 class Machine {
     private String name;
     private int number;

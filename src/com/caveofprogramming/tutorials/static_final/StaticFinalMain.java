@@ -1,3 +1,4 @@
+package com.caveofprogramming.tutorials.static_final;
 
 class Thing {
     public static final int LUCKY_NUMBER = 7;

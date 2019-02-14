@@ -1,3 +1,5 @@
+package com.caveofprogramming.tutorials.arraypractice;
+
 public class MainArray {
     public static void main(String[] args) {
         //Interger Array
