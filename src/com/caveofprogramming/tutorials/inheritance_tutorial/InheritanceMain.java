@@ -2,17 +2,28 @@ package com.caveofprogramming.tutorials.inheritance_tutorial;
 
 public class InheritanceMain {
     public static void main(String[] args) {
-       Machine machine = new Machine();
+        Machine machine = new Machine();
 
-       machine.start();
-       machine.stop();
+        machine.start();
+        machine.stop();
 
-        System.out.println();
+        Car car = new Car();
 
-       Car car = new Car();
-       car.start();
-       car.showInfo();
-       car.wipeWindshield();
-       car.stop();
+        car.start();
+        car.showInfo();
+        car.wipeWindshield();
+        car.stop();
     }
 }
+
+//TODO:
+// OUTPUT::
+//        Machine started...
+//        Machine stopped...
+//        Car started...
+//        Car name: Machine Type 1
+//        Wiping windshield...
+//        Machine stopped...
+// METHODS::
+//        Machine: start(), stop(), name
+//        Car: wipeWindshield(), showInfo(get from machine), override of start()
