@@ -10,6 +10,7 @@ class Frog {
     }
 
     public String toString() {
+//        return String.format("%d: %s", id, name);
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append(id)
@@ -21,16 +22,17 @@ class Frog {
 
 public class ToStringMain {
     public static void main(String[] args) {
-        Frog frog = new Frog(1, "Freddy");
-        Frog frog1 = new Frog(2, "Roger");
+        Frog frog = new Frog(0, "Freddy");
+        Frog frog1 = new Frog(1, "Roger");
 
-        System.out.println(frog);
-        System.out.println(frog1);
+        System.out.println(frog.toString());
+        System.out.println(frog1.toString());
     }
 }
 
 
 //TODO:
+// //METHODS:: Frog() -> toString(), int id, string name
 // OUTPUT::
 //        1: Freddy
 //        2: Roger
