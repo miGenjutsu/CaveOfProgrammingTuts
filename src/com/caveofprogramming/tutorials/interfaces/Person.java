@@ -8,11 +8,11 @@ public class Person implements Info {
     }
 
     public void greet() {
-        System.out.println("Hello there.");
+        System.out.println("Hello there!");
     }
 
     @Override
     public void showInfo() {
-        System.out.println("Person name is: "+name);
+        System.out.println("Person Name: "+name);
     }
 }
