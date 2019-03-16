@@ -1,4 +1,4 @@
-package toString;
+package com.caveofprogramming.tutorials.toString;
 
 class Frog {
     private int id;
@@ -10,8 +10,6 @@ class Frog {
     }
 
     public String toString() {
-//        return String.format("%d : %s", id, name);
-
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append(id)
@@ -32,4 +30,8 @@ public class ToStringMain {
 }
 
 
-//frog names freddy, roger
+//TODO:
+// OUTPUT::
+//        1: Freddy
+//        2: Roger
+// frog names freddy, roger
