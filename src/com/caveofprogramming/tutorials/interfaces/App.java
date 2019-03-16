@@ -7,16 +7,15 @@ public class App {
         Machine machine = new Machine();
         machine.start();
 
-        Info info = machine;
-        info.showInfo();
-
-        System.out.println();
-
-        Person person = new Person("Link");
+        Person person = new Person("Zelda");
         person.greet();
 
+        Info info = new Machine();
+        info.showInfo();
+
         Info info1 = person;
-        person.showInfo();
+        info1.showInfo();
+
 
         System.out.println();
 
@@ -26,9 +25,7 @@ public class App {
 
     }
 
-    public static void outputInfo(Info info) {
-        info.showInfo();
-    }
+    private static void outputInfo(Info info) { info.showInfo(); }
 }
 
 //TODO:
