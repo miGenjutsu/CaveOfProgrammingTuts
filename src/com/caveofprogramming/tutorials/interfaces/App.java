@@ -7,22 +7,26 @@ public class App {
         Machine machine = new Machine();
         machine.start();
 
-        Person person = new Person("Zelda");
-        person.greet();
-
-        Info info = new Machine();
+        Info info = machine;
         info.showInfo();
-
-        Info info1 = person;
-        info1.showInfo();
 
         System.out.println();
 
+        Person person = new Person("Link");
+        person.greet();
+
+        Info info1 = person;
+        person.showInfo();
+
+        System.out.println();
+
+//      using a created method
         outputInfo(machine);
         outputInfo(person);
+
     }
 
-    private static void outputInfo(Info info) {
+    public static void outputInfo(Info info) {
         info.showInfo();
     }
 }
@@ -36,4 +40,5 @@ public class App {
 // METODS::
 // Machine: int id=7, start()
 // Person: string name, greet()
-// Main:
+// Main: outputInfo(Info info)
+// Info: showInfo()
