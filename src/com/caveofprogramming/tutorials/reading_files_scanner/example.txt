@@ -1,0 +1,11 @@
+3
+line one
+line two
+line three
+
+cat
+fox
+dog
+gecko
+
+location:: E:\CloudLogixTech\Documents\DesktopFoloder\Udemy-Courses\java-cave-of-programming-tutorials\CaveOfProgrammingTuts\src\com\caveofprogramming\tutorials\reading_files_scanner
