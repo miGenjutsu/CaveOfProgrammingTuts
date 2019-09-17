@@ -7,15 +7,21 @@ public class Person implements Serializable {
     private String name;
 
     public Person(int id, String name) {
-        this.id=id;
-        this.name=name;
+        this.id = id;
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Person [" +
+        return "Person[" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ']';
     }
 }
+
+
+
+//TODO:
+// set a person id
+// set a person name

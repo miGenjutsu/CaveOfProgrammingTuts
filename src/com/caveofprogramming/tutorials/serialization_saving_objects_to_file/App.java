@@ -1,32 +1,35 @@
 package com.caveofprogramming.tutorials.serialization_saving_objects_to_file;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Writing objects...");
+        System.out.println("Writing Objects...");
 
-        Person naruto = new Person(543, "Naruto");
-        Person sasuke = new Person(123, "Sasuke");
+        Person naruto = new Person(654, "Naruto");
+        Person sasuke = new Person(321, "Sasuke");
 
-        System.out.println(naruto);
-        System.out.println(sasuke);
+        try (FileOutputStream fileOutputStream = new FileOutputStream("person.bin")) {
 
-
-        try(FileOutputStream fileOutputStream = new FileOutputStream("people.bin")) {
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
             objectOutputStream.writeObject(naruto);
             objectOutputStream.writeObject(sasuke);
 
             objectOutputStream.close();
-        }catch (FileNotFoundException e) {
+
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
+
+
+//TODO:
+// sout "Writing Objects"
+// create a try/cath for FileOutputStream
+// inside try: create an 'object output stream' and pass 'file output stream' as argument
+// handle all catch exceptions. (for now just print out 'stack trace')
